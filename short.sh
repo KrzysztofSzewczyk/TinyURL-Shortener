@@ -31,7 +31,7 @@ if [ $# -eq 1 ]; then
   fi
 else
   if [ $# -eq 2 ]; then
-    curl "http://tinyurl.com/api-create.php?url=$2&alias=$2" 2> /dev/null
+    curl "http://tinyurl.com/api-create.php?url=$1&alias=$2" 2> /dev/null
     echo ""
   else
     echo "short: Expected 1 or 2 parameters. Use -h."
