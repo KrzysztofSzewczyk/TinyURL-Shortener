@@ -1,4 +1,8 @@
 
+# TinyURL Shortener CLI
+# Copyright (C) by Krzysztof Palaiologos Szewczyk.
+# Licensed under terms of MIT license.
+
 command -v curl >/dev/null 2>&1 || { echo >&2 "This script requires cURL to be installed. Aborting."; exit 1; }
 
 if [ $# -eq 1 ]; then
